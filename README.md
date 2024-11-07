@@ -1,12 +1,38 @@
-# de-live-coding-exercise
+# Take Home Assignment
+
+## Introduction
+Thank you for your interest in the Data Engineer role within the IT – AI/ML Team at SHI International Corp. As part of the interview process, we would like you to complete a take home assignment. After you have completed the assignment, we will review the deliverables and schedule a follow-up technical interview, if needed.
+
+## Scenario
+You are a Data Engineer. You have been asked to create an ETL process to ingest new or updated product data from multiple sources. The product owner for this project has obtained sample datasets, described below. You have been told that unique pairs of Manufacturer and SKU identify unique product records, and that the ingested data will be heavily queried by business applications. What will you do?
 
 ### Instructions
-You are a Data Engineer. You have been asked to create an ETL process to ingest new or updated product data from multiple sources. The product owner for this project has obtained sample datasets, described below. You have been told that products should be uniquely identified by SKU and Manufacturer, and that the ingested data will be heavily queried by business applications. What will you do?
+- Write a design specification document that summarizes the problem, assumptions, solution, alternative solutions, and open questions.
+    - Design should address data pipeline, data storage, data integrity, scalability, and performance.
+    - Include diagrams as needed.
+- Create a repository on GitHub and write the code for your solution using standard coding practices.
+    - Code should be written in Python.
+    - Platforms and/or packages that you decide are fit for purpose may be used.
+    - Coding assistants may not be used.
+    - Include instructions for environment setup and running the code.
+- Deliverables
+    - Design specification document (PDF format)
+    - Link to GitHub repo
+    - Logs from successfully run code (PDF format)
+    - Data summary report (PDF format)
+        - Number of unique product records
+        - Number of unique manufacturers
+        - Number of unique categories
+        - Number of unique price records
+        - Number of unique distributors
+        - Number of product records per manufacturer
+        - Number of product records per category
+        - Number of price records per distributor 
 
 ### Datasets
-- products.json.gz: product metadata from a third-party data curator's API
-- jillsjunk.csv.gz: product price and quantity from distributor Jill's Junk
-- samsstuff.csv.gz: product price and quantity from distributor Sam's Stuff
+- **products.json.gz**: Product metadata from a third-party data curator's API. Updated hundreds of times per day.
+- **jillsjunk.csv.gz**: Product price and quantity from distributor Jill's Junk. Jill's Junk is one of many distributors. Products can overlap among distributors. Updated dozens of times per day.
+- **samsstuff.csv.gz**: Product price and quantity from distributor Sam's Stuff. Sam's Stuff is one of many distributors. Products can overlap among distributors. Updated dozens of times per day.
 
 ### Sample from products.json.gz
 ```
